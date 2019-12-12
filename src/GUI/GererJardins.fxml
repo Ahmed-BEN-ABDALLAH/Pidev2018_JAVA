@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="761.0" prefWidth="1392.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GererJardins">
+   <children>
+      <TableView fx:id="tablejardin" layoutX="25.0" layoutY="24.0" prefHeight="554.0" prefWidth="955.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+          <TableColumn fx:id="description" prefWidth="150.0" text="Description" />
+            <TableColumn fx:id="adresse" prefWidth="103.0" text="Adresse " />
+            <TableColumn fx:id="numtel" prefWidth="156.0" text="Numero Telephone" />
+            <TableColumn fx:id="adressemail" prefWidth="172.0" text="Email adresse" />
+            <TableColumn fx:id="etat" prefWidth="102.0" text="Etat" />
+        </columns>
+      </TableView>
+      <PieChart fx:id="stat" layoutX="1002.0" layoutY="24.0" prefHeight="357.0" prefWidth="469.0" />
+   </children>
+</AnchorPane>

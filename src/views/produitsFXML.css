@@ -1,0 +1,16 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 avr. 2018, 17:38:55
+    Author     : said
+*/
+
+.round-lbl{
+    
+    
+    -fx-background-color:#FE7A79;
+    -fx-background-radius:100%;
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="488.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SeeComController">
+   <children>
+      <Pane fx:id="affpane" prefHeight="359.0" prefWidth="489.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="lc" />
+            <Label layoutX="26.0" layoutY="27.0" text="Content :" />
+            <JFXListView fx:id="lscom" layoutX="26.0" layoutY="44.0" prefHeight="75.0" prefWidth="436.0" />
+            <JFXButton layoutX="266.0" layoutY="240.0" style="-fx-background-color: white;" text="Submit" textFill="INDIANRED" />
+            <ImageView fx:id="m1" fitHeight="25.0" fitWidth="27.0" layoutX="194.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate1.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m2" fitHeight="25.0" fitWidth="27.0" layoutX="240.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate1.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m11" fitHeight="25.0" fitWidth="27.0" layoutX="147.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m21" fitHeight="25.0" fitWidth="27.0" layoutX="170.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m31" fitHeight="25.0" fitWidth="27.0" layoutX="193.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m41" fitHeight="25.0" fitWidth="27.0" layoutX="216.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m51" fitHeight="25.0" fitWidth="27.0" layoutX="239.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m3" fitHeight="25.0" fitWidth="27.0" layoutX="217.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate1.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m4" fitHeight="25.0" fitWidth="27.0" layoutX="171.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate1.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m5" fitHeight="25.0" fitWidth="27.0" layoutX="148.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/rate1.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchomap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="1108.0" stylesheets="CssPackage/style_panel.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjoutController">
+   <children>
+      <Button fx:id="btn" layoutX="154.0" layoutY="568.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #0db2d7;" text="Valider" textFill="#393535fc">
+         <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>  
+          
+      <JFXTextField fx:id="nom" focusColor="#ee0e52" labelFloat="true" layoutX="114.0" layoutY="74.0" prefHeight="26.0" prefWidth="262.0" promptText="nom" unFocusColor="#ee0e52">
+ <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      <JFXTextField fx:id="prenom" focusColor="#08ab3c" labelFloat="true" layoutX="548.0" layoutY="79.0" prefHeight="26.0" prefWidth="244.0" promptText="prenom" unFocusColor="#08ab3c">
+
+       <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      
+      
+            <JFXTextField fx:id="adresse" focusColor="#08ab3c" labelFloat="true" layoutX="115.0" layoutY="124.0" prefHeight="26.0" prefWidth="262.0" promptText="adresse" unFocusColor="#ca6715">
+
+
+       <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      
+      <JFXTextArea fx:id="description" focusColor="#e018a8" labelFloat="true" layoutX="132.0" layoutY="407.0" prefHeight="98.0" prefWidth="274.0" promptText="description" unFocusColor="#e018a8">
+
+       <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+      </JFXTextArea>
+      
+         
+            <JFXTextField fx:id="numtel" focusColor="#0db2d7" labelFloat="true" layoutX="545.0" layoutY="119.0" prefHeight="26.0" prefWidth="244.0" promptText="num tel" unFocusColor="#d5d60f">
+
+
+           <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#0db2d7" labelFloat="true" layoutX="546.0" layoutY="168.0" onMouseExited="#checkmail" prefHeight="26.0" prefWidth="262.0" promptText="email" unFocusColor="#6813d3">
+
+
+          <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            
+              <JFXTextField fx:id="prix" focusColor="#0db2d7" labelFloat="true" layoutX="114.0" layoutY="181.0" prefHeight="26.0" prefWidth="262.0" promptText="prix" unFocusColor="#2117a7">
+
+
+          <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      <JFXDatePicker fx:id="disponibilite" defaultColor="#283b39" layoutX="104.0" layoutY="260.0" prefHeight="28.0" prefWidth="294.0" promptText="date disponibilité" />
+      <JFXDatePicker fx:id="datefin" defaultColor="#ff1111" layoutX="517.0" layoutY="254.0" prefHeight="28.0" prefWidth="262.0" promptText="date fin disponibilite" />
+      
+      <Button fx:id="Image_fichier" layoutX="881.0" layoutY="121.0" mnemonicParsing="false" onAction="#Image_fichier" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: #0db2d7;" text="Image" textFill="#393535fc" />
+      <ImageView fx:id="image_p" fitHeight="150.0" fitWidth="200.0" layoutX="868.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="code" focusColor="#0db2d7" labelFloat="true" layoutX="628.0" layoutY="213.0" onMouseExited="#verifcode" prefHeight="26.0" prefWidth="133.0" promptText="entez votre code" unFocusColor="#6813d3">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <GoogleMapView fx:id="mapview" layoutX="527.0" layoutY="334.0" prefHeight="262.0" prefWidth="576.0" />
+      <JFXTextField fx:id="l1" focusColor="#ee0e52" labelFloat="true" layoutX="557.0" layoutY="302.0" prefHeight="26.0" prefWidth="108.0" promptText="longitue" unFocusColor="#ee0e52">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="l2" focusColor="#ee0e52" labelFloat="true" layoutX="710.0" layoutY="304.0" prefHeight="26.0" prefWidth="108.0" promptText="latitude" unFocusColor="#ee0e52">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+     
+   </children>
+</AnchorPane>

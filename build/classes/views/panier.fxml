@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="1039.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PanierController">
+   <children>
+      <JFXDrawer fx:id="drawer" layoutX="4.0" layoutY="-1.0" prefHeight="711.0" prefWidth="179.0" />
+      <JFXHamburger fx:id="hamburger" layoutX="17.0" layoutY="24.0" />
+      <TableView fx:id="table_view" layoutX="199.0" layoutY="124.0" prefHeight="375.0" prefWidth="661.0">
+        <columns>
+          <TableColumn fx:id="nom_p" prefWidth="96.0" text="nom produit" />
+          <TableColumn fx:id="image_p" prefWidth="96.0" text="image" />
+          <TableColumn fx:id="quantite_p" minWidth="4.0" prefWidth="191.0" text="quantite" />
+          <TableColumn fx:id="prix_p" prefWidth="213.0" text="prix" />
+          <TableColumn fx:id="prixtotal_p" prefWidth="202.0" text="prix total" />
+          <TableColumn prefWidth="135.0" text="supprimer" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

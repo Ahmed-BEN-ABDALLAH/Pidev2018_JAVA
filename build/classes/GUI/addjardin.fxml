@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="705.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.jardinController">
+   <children>
+      <JFXTextField fx:id="nomjardin" focusColor="#fbfbfb" layoutX="138.0" layoutY="97.0" prefHeight="25.0" prefWidth="229.0" promptText="Nom Jardin" unFocusColor="#f61010" />
+      <JFXTextArea fx:id="description_jar" focusColor="#100101" layoutX="132.0" layoutY="176.0" prefHeight="94.0" prefWidth="241.0" promptText="Description" unFocusColor="#ea49f8" />
+      <JFXTextField fx:id="adresse_jar" layoutX="439.0" layoutY="97.0" prefHeight="25.0" prefWidth="221.0" promptText="Adresse" unFocusColor="#0dff25" />
+      <TextField fx:id="tel_jar" layoutX="448.0" layoutY="244.0" promptText="Téléphone">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <JFXButton layoutX="613.0" layoutY="478.0" onAction="#addbutton" text="serveur" />
+      <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" layoutX="147.0" layoutY="370.0" onDragDropped="#imageDropped" onDragOver="#imageDragOver" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/drag-and-drop-icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ajoutjardin" cancelButton="true" defaultButton="true" layoutX="504.0" layoutY="460.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="25.0" prefWidth="91.0" text="valider" textFill="#4a1ae9" underline="true" />
+      <FontAwesomeIconView fill="#ff0e0e" glyphName="amilia" layoutX="109.0" layoutY="113.0" size="25" text="" />
+      <FontAwesomeIconView fill="#3bff05" glyphName="MAP_MARKER" layoutX="423.0" layoutY="120.0" size="25" text="" />
+      <FontAwesomeIconView fill="#cc26d4" glyphName="COMMENTS" layoutX="107.0" layoutY="193.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="PHONE" layoutX="421.0" layoutY="265.0" size="25" />
+      
+      <JFXTextField fx:id="adresse_mail" layoutX="431.0" layoutY="169.0" prefHeight="25.0" prefWidth="221.0" promptText="Adresse Email" unFocusColor="#f1ff0f" />
+      <FontAwesomeIconView glyphName="" layoutX="402.0" layoutY="190.0" text="" />
+   </children>
+</AnchorPane>

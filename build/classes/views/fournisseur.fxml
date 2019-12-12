@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../content/style_panel.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.fournisseur">
+   <top>
+      <HBox prefHeight="70.0" prefWidth="801.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #F2F3FE;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="70.0" prefWidth="823.0" style="-fx-background-color: #F2F3FE;">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../content/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/images.jpg" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="77.0" prefWidth="153.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quiclsa Quicksandnd; -fx-font-weight: bold; -fx-fill: BLACK;" text="User Name">
+                           <HBox.margin>
+                              <Insets left="10.0" top="30.0" />
+                           </HBox.margin>
+                        </Text>
+                        <FontAwesomeIconView glyphName="ANGLE_DOWN" size="15">
+                           <HBox.margin>
+                              <Insets left="10.0" top="30.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children></HBox>
+   </top>
+   <left>
+      <VBox maxWidth="-Infinity" prefWidth="167.0" style="-fx-background-color: #FBFBFE;" styleClass="cursor_hand" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Profile" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <children>
+                  <FontAwesomeIconView fill="#ff3a2c" glyphName="USER" size="15" />
+                  <Text fill="#ff3a2c" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#AjoutP" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#098612" glyphName="PLUS" size="15" />
+                  <Text fill="#098612" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Produit" wrappingWidth="127.943359375">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#AfficheP" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#f554bd" glyphName="LIST" size="15" />
+                  <Text fill="#f554bd" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Boutique">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#CommandeP" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#2a2af5" glyphName="CIRCLE_ALT_NOTCH" size="15" />
+                  <Text fill="#2a2af5" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des commandes">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Statistique" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#ff8d29" glyphName="LINE_CHART" size="15" />
+                  <Text fill="#ff8d29" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistiques">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#ReclamationP" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#ff3a2c" glyphName="EXCLAMATION_CIRCLE" size="15" />
+                  <Text fill="#ff3a2c" strokeType="OUTSIDE" strokeWidth="0.0" text="Reclamations">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="350.0" onMouseClicked="#logoutp" styleClass="hover_border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="SIGN_OUT" size="15" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Déconnexion">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

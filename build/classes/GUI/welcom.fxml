@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.WelcomController">
+   <children>
+      <ImageView fitHeight="229.0" fitWidth="710.0" layoutX="-2.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="file:/C:/Users/ghada/OneDrive/Bureau/firass/aaa/template04_04_2018%20ghada/template04_04_2018/template/src/icons/all-for-kids-logo1.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="226.0" prefHeight="264.0" prefWidth="710.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="86.0" layoutX="141.0" layoutY="62.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/ghada/OneDrive/Bureau/firass/aaa/template04_04_2018%20ghada/template04_04_2018/template/src/icons/Streamline-18-128.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="81.0" fitWidth="86.0" layoutX="401.0" layoutY="64.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/ghada/OneDrive/Bureau/firass/aaa/template04_04_2018%20ghada/template04_04_2018/template/src/icons/icon_421-128.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="344.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.quickviewContoller">
+   <children>
+      <ImageView fx:id="image_p" fitHeight="194.0" fitWidth="401.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" />
+      <FontAwesomeIconView fill="#ff0303" glyphName="USER" layoutX="55.0" layoutY="221.0" size="20" text="" />
+      <FontAwesomeIconView fill="#f4f400" glyphName="CALENDAR" layoutX="54.0" layoutY="256.0" size="20" text="" />
+      <FontAwesomeIconView glyphName="COMMENT" layoutX="12.0" layoutY="340.0" size="20" />
+      <FontAwesomeIconView fill="#44ff00" glyphName="MALE" layoutX="54.0" layoutY="288.0" size="20" />
+      <FontAwesomeIconView fill="#ff3b79" glyphName="FEMALE" layoutX="70.0" layoutY="289.0" size="20" text="" />
+      <FontAwesomeIconView fill="#00fff6" glyphName="CLONE" layoutX="53.0" layoutY="325.0" size="20" text="" />
+      <Text fx:id="nomuser" layoutX="99.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="108.803466796875">
+         <font>
+            <Font name="Blackadder ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="categorie" layoutX="99.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="108.80346775054932">
+         <font>
+            <Font name="Blackadder ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="genre" layoutX="99.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="93.47008943557739">
+         <font>
+            <Font name="Blackadder ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="datenow" layoutX="99.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="139.4700927734375">
+         <font>
+            <Font name="Blackadder ITC" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="description" layoutX="13.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="248.56591796875">
+         <font>
+            <Font name="Blackadder ITC" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

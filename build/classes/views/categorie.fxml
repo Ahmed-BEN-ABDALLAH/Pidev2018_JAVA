@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="741.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.categorieController">
+   <children>
+      <JFXDrawer fx:id="drawer" layoutY="91.0" prefHeight="650.0" prefWidth="250.0" />
+      <HBox layoutX="50.0" prefHeight="88.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <JFXHamburger fx:id="hamburger" layoutX="14.0" layoutY="14.0" />
+      <Pane fx:id="pane1" layoutX="250.0" layoutY="147.0" onMouseClicked="#pane1" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #f0c24b; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #f0c24b;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="vêtement">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="125.0" fitWidth="155.0" layoutX="36.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/category-img1.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="250.0" layoutY="371.0" onMouseClicked="#pane5" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #ea77ad; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #ea77ad;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="jouets">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="125.0" fitWidth="154.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/image-1.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="446.0" layoutY="371.0" onMouseClicked="#pane6" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #a597e7; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #a597e7;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="lits pour enfants">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="125.0" fitWidth="153.0" layoutX="36.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/category-img6.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="643.0" layoutY="371.0" onMouseClicked="#pane7" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #f0c24b; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #f0c24b;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="bureau">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="118.0" fitWidth="155.0" layoutX="40.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/category-img7.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="840.0" layoutY="371.0" onMouseClicked="#pane8" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #b5d56a; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #b5d56a;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="bibliothéque">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="125.0" fitWidth="146.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/category-img8.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="840.0" layoutY="147.0" onMouseClicked="#pane4" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #84bed6; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #84bed6;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="pyjama">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="125.0" fitWidth="132.0" layoutX="37.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/category-img4.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="643.0" layoutY="147.0" onMouseClicked="#pane3" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #ea7066; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #ea7066;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="sous-vêtement">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="125.0" fitWidth="176.0" layoutX="37.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/category-img3.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="446.0" layoutY="147.0" onMouseClicked="#pane2" prefHeight="181.0" prefWidth="185.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #b5d56a; -fx-border-radius: 10;">
+         <children>
+            <HBox alignment="TOP_CENTER" layoutX="1.0" layoutY="140.0" prefHeight="41.0" prefWidth="185.0" style="-fx-background-radius: 0 0 10 10; -fx-background-color: #b5d56a;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="chaussures">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <ImageView fitHeight="125.0" fitWidth="132.0" layoutX="37.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../content/category-img2.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

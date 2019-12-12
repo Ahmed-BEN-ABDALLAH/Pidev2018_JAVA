@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MesmsgsController">
+   <children>
+      <TableView fx:id="tablemsg" layoutX="82.0" layoutY="116.0" prefHeight="479.0" prefWidth="875.0">
+        <columns>
+          <TableColumn fx:id="objet" prefWidth="171.0" text="Objet" />
+          <TableColumn fx:id="contenu" prefWidth="499.0" text="Contenu " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

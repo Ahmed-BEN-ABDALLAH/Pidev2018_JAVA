@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="views.TestcommentaireController">
+   <children>
+      <JFXTextArea fx:id="commentairecontenu" labelFloat="true" layoutX="43.0" layoutY="25.0" prefHeight="87.0" prefWidth="314.0" promptText="Commentaire" />
+      <FontAwesomeIconView fx:id="addcomment" fill="#f50000" glyphName="SEND" layoutX="321.0" layoutY="100.0" onMouseClicked="#ajoutercommentaireproduit" size="25">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <JFXListView fx:id="commentairelist" layoutX="52.0" layoutY="155.0" prefHeight="207.0" prefWidth="517.0" />
+   </children>
+</AnchorPane>

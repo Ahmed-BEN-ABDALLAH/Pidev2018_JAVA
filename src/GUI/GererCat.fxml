@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="488.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GererCatController">
+   <children>
+      <Pane fx:id="afpane" layoutX="1.0" prefHeight="240.0" prefWidth="488.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="21.0" layoutY="96.0" text="Content :" />
+            <Label fx:id="l2" layoutX="313.0" layoutY="24.0" />
+            <Label fx:id="l1" layoutX="21.0" layoutY="24.0" />
+            <Label fx:id="l3" layoutX="313.0" layoutY="64.0" />
+            <JFXListView fx:id="lspub" layoutX="11.0" layoutY="120.0" prefHeight="82.0" prefWidth="462.0" visible="false" />
+            <JFXButton fx:id="appr" layoutX="360.0" layoutY="195.0" onAction="#ComResolu" prefHeight="31.0" prefWidth="113.0" style="-fx-background-color: white;" text="Resolved" textAlignment="RIGHT" textFill="#2e6136">
+               <font>
+                  <Font name="Arial Unicode MS" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="affpane" layoutY="233.0" prefHeight="126.0" prefWidth="489.0" style="-fx-background-color: #CEF6CE;">
+         <children>
+            <Label fx:id="lc" />
+            <Label layoutX="26.0" layoutY="27.0" text="Content :" />
+            <JFXListView fx:id="lscom" layoutX="26.0" layoutY="44.0" prefHeight="75.0" prefWidth="436.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="532.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccessAdminController">
+   <children>
+      <ImageView fx:id="p_image" fitHeight="206.0" fitWidth="383.0" layoutX="75.0" layoutY="89.0" onMouseClicked="#image_fichier" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/access.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="106.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insérer image d'accés">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Text>
+      <FontAwesomeIconView fx:id="unlock" glyphName="UNLOCK" layoutX="239.0" layoutY="342.0" onMouseClicked="#unlockad" size="60" />
+      <FontAwesomeIconView fill="RED" glyphName="TIMES" layoutX="485.0" layoutY="48.0" onMouseClicked="#close" size="30" />
+   </children>
+</AnchorPane>

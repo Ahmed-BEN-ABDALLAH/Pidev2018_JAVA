@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="838.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ForumController">
+   <children>
+      <Pane fx:id="dashbord" layoutY="90.0" prefHeight="359.0" prefWidth="240.0" style="-fx-background-color: #0A122A;">
+         <children>
+            <JFXButton fx:id="ajout" layoutX="8.0" layoutY="51.0" onAction="#ShowCategorie" prefHeight="55.0" prefWidth="205.0" style="-fx-background-color: 0A122A;" text="Categories" textFill="WHITESMOKE" underline="true">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font>
+               <effect>
+                  <Reflection />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="afficher" layoutX="11.0" layoutY="106.0" onAction="#showPubpop" prefHeight="55.0" prefWidth="221.0" style="-fx-background-color: 0A122A;" text="The most populair posts" textFill="#f8f8f7" underline="true">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="modification" layoutX="7.0" layoutY="161.0" onAction="#showPubrec" prefHeight="55.0" prefWidth="205.0" style="-fx-background-color: 0A122A;" text="The most recent posts" textFill="#fffffd" underline="true">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="modification1" layoutX="15.0" layoutY="216.0" onAction="#Spub" prefHeight="55.0" prefWidth="205.0" style="-fx-background-color: 0A122A;" text="My posts" textFill="#fffffd" underline="true">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="modification2" layoutX="7.0" layoutY="263.0" onAction="#Scom" prefHeight="55.0" prefWidth="205.0" style="-fx-background-color: 0A122A;" text="My comments" textFill="#fffffd" underline="true">
+               <font>
+                  <Font name="Arial Unicode MS" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="titre" layoutX="242.0" layoutY="-3.0" prefHeight="87.0" prefWidth="597.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="382.0" layoutX="136.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/top3.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="showcat" layoutX="243.0" layoutY="75.0" prefHeight="366.0" prefWidth="597.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <JFXListView fx:id="cats" layoutX="1.0" layoutY="183.0" prefHeight="128.0" prefWidth="583.0" />
+            <JFXListView fx:id="catm" layoutX="1.0" prefHeight="141.0" prefWidth="583.0" />
+            <JFXButton fx:id="s" layoutX="359.0" layoutY="151.0" onAction="#shows" style="-fx-background-color: white;" text="Show sub-categories" textFill="INDIANRED" />
+            <JFXButton fx:id="supps" layoutX="232.0" layoutY="317.0" onAction="#ShowPub2" style="-fx-background-color: white;" text="Show posts" textFill="INDIANRED" />
+            <JFXButton fx:id="btn" layoutX="84.0" layoutY="151.0" onAction="#ShowPub" style="-fx-background-color: white;" text="Show posts" textFill="INDIANRED" />
+         </children>
+      </Pane>
+      <Pane fx:id="showpubs" layoutX="247.0" layoutY="84.0" prefHeight="350.0" prefWidth="583.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <JFXListView fx:id="lspub2" layoutX="5.0" layoutY="14.0" prefHeight="282.0" prefWidth="583.0" />
+            <JFXButton fx:id="afcom" layoutX="357.0" layoutY="311.0" onAction="#showPubComm" style="-fx-background-color: white;" text="Show comments" textFill="INDIANRED" />
+            <JFXButton fx:id="afcom1" layoutX="149.0" layoutY="311.0" onAction="#SeeMore" style="-fx-background-color: white;" text="See more" textFill="INDIANRED" />
+         </children>
+      </Pane>
+      <Pane fx:id="showcoms" layoutX="243.0" layoutY="94.0" prefHeight="350.0" prefWidth="597.0" style="-fx-background-color: white;">
+         <children>
+            <JFXListView fx:id="lsrep" layoutX="5.0" layoutY="14.0" prefHeight="282.0" prefWidth="583.0" />
+            <JFXButton fx:id="ajoutt" layoutX="410.0" layoutY="305.0" onAction="#Add" style="-fx-background-color: white;" text="Add comment" textFill="INDIANRED" />
+            <JFXButton fx:id="ajoutt1" layoutX="162.0" layoutY="305.0" onAction="#Shcom" style="-fx-background-color: white;" text="Show comment" textFill="INDIANRED" />
+         </children>
+      </Pane>
+      <Pane fx:id="ajouttpane" layoutX="244.0" layoutY="84.0" prefHeight="350.0" prefWidth="583.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <JFXTextArea fx:id="cont" focusColor="#3b793a" layoutX="14.0" layoutY="65.0" prefHeight="232.0" prefWidth="569.0" unFocusColor="#0d486b" />
+            <JFXButton fx:id="ajouttt" layoutX="262.0" layoutY="311.0" onAction="#AddComm" style="-fx-background-color: white;" text="Add" textFill="INDIANRED" />
+         </children>
+      </Pane>
+      <Pane fx:id="recpane" layoutX="244.0" layoutY="94.0" prefHeight="332.0" prefWidth="583.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <JFXListView fx:id="rec" layoutX="14.0" layoutY="30.0" prefHeight="299.0" prefWidth="569.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="poppane" layoutX="242.0" layoutY="94.0" prefHeight="339.0" prefWidth="583.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <JFXListView fx:id="pop" layoutX="14.0" layoutY="32.0" prefHeight="299.0" prefWidth="556.0" />
+         </children>
+      </Pane>
+      <Pane prefHeight="73.0" prefWidth="240.0" style="-fx-background-color: #0A122A;">
+         <children>
+            <Label layoutX="28.0" prefHeight="71.0" prefWidth="213.0" text="Our knowledge base" textFill="#fafbfb">
+               <font>
+                  <Font name="Arial Unicode MS" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="72.0" prefHeight="25.0" prefWidth="240.0" style="-fx-background-color: indianred;" />
+   </children>
+</AnchorPane>

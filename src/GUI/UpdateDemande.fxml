@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdateDemandeController">
+   <children>
+      <Button fx:id="btn" layoutX="334.0" layoutY="415.0" mnemonicParsing="false" onAction="#modifier_baby" style="-fx-background-color: #ea646a;" text="Modifier" textFill="#393535fc">
+         <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>  
+          
+      <JFXTextField fx:id="nom" focusColor="#ee0e52" labelFloat="true" layoutX="79.0" layoutY="21.0" promptText="nom" unFocusColor="#ee0e52">
+ <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      <JFXTextField fx:id="prenom" focusColor="#08ab3c" labelFloat="true" layoutX="353.0" layoutY="21.0" promptText="prenom" unFocusColor="#08ab3c">
+
+       <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      
+      
+            <JFXTextField fx:id="adresse" focusColor="#08ab3c" labelFloat="true" layoutX="71.0" layoutY="78.0" promptText="adresse" unFocusColor="#08ab3c">
+
+
+       <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      
+      <JFXTextArea fx:id="description" focusColor="#e018a8" labelFloat="true" layoutX="65.0" layoutY="364.0" prefHeight="50.0" prefWidth="198.0" promptText="description" unFocusColor="#e018a8">
+
+       <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+      </JFXTextArea>
+      
+         
+            <JFXTextField fx:id="numtel" focusColor="#0db2d7" labelFloat="true" layoutX="353.0" layoutY="66.0" promptText="num tel" unFocusColor="#0db2d7">
+
+
+           <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#0db2d7" labelFloat="true" layoutX="356.0" layoutY="112.0" promptText="email" unFocusColor="#0db2d7">
+
+
+          <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            
+              <JFXTextField fx:id="prix" focusColor="#0db2d7" labelFloat="true" layoutX="74.0" layoutY="125.0" promptText="prix" unFocusColor="#0db2d7">
+
+
+          <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+      <JFXDatePicker fx:id="disponibilite" defaultColor="#283b39" layoutX="35.0" layoutY="181.0" promptText="date disponibilité" />
+      <JFXDatePicker fx:id="datefin" defaultColor="#ff1111" layoutX="248.0" layoutY="181.0" promptText="date fin disponibilite" />
+      
+      <Button fx:id="Image_fichier" layoutX="60.0" layoutY="277.0" mnemonicParsing="false" onAction="#Image_fichier1" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #0db2d7" text="Image" textFill="#393535fc" />
+      <ImageView fx:id="image_p" fitHeight="150.0" fitWidth="200.0" layoutX="439.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" />
+     
+   </children>
+</AnchorPane>

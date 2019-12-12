@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1422.0" stylesheets="CssPackage/style_panel.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AdminInterfaceGhada">
+   <top>
+      <HBox prefHeight="110.0" prefWidth="1231.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="1061.0" style="-fx-background-radius: 200; -fx-background-color: GRIS;" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox prefHeight="110.0" prefWidth="55.0">
+                     <children>
+                        <ImageView fitHeight="74.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Ressources/serveur.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="-100.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="-20.0" right="400.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+<!--                     <children>
+                        <FontAwesomeIconView fill="#15f800" glyphName="BULLHORN" size="80" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Evenements">
+                           <HBox.margin>
+                              <Insets left="10.0" right="25.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>-->
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#Donation" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <FontAwesomeIconView fill="#ff001a" glyphName="GIFT" size="80" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Approuver les Demandes">
+                           <HBox.margin>
+                              <Insets left="10.0" right="25.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT"  styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <FontAwesomeIconView fill="#2a00e4" glyphName="LIST" size="25" />
+                        <Text onMouseClicked="#AjoutP" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Desapprouver les Demandes">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#AfficheP" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <FontAwesomeIconView fill="#1cbc9c" glyphName="LIST" size="25" text="" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Approuver les Offres">
+                           <HBox.margin>
+                              <Insets left="10.0" right="25.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#AjoutP" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <FontAwesomeIconView fill="#2a00e4" glyphName="PLUS" size="25" />
+                        <Text onMouseClicked="#AjoutP" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Désaprouver les Offres">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Text fx:id="nbr" fill="#2807ff" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets top="38.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_LEFT" onMouseClicked="#evenement" prefHeight="110.0" prefWidth="120.0" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+                     <padding>
+                        <Insets bottom="10.0" left="50.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="86.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Ressources/admin.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="35.0" fitWidth="40.0" onMouseClicked="#dec" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../Ressources/dec.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets right="25.0" />
+               </opaqueInsets>
+            </HBox>
+         </children></HBox>
+   </top>
+   <opaqueInsets>
+      <Insets right="22.0" top="223.0" />
+   </opaqueInsets>
+   <left>
+      <VBox prefHeight="574.0" prefWidth="408.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="574.0" prefWidth="409.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

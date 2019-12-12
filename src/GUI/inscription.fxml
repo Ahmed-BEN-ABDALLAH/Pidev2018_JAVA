@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="541.0" style="-fx-background-color: #1a2778;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InscriptionController">
+   <children>
+      <Text fill="WHITE" layoutX="83.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name" />
+      <Text fill="WHITE" layoutX="98.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text fill="WHITE" layoutX="86.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirme password" />
+      <Text fill="WHITE" layoutX="103.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
+      <Text fill="WHITE" layoutX="102.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+      <Text fill="WHITE" layoutX="90.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" />
+      <Text fill="WHITE" layoutX="91.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" />
+      <Text fill="WHITE" layoutX="44.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de telephone" />
+      <TextField fx:id="nom" layoutX="253.0" layoutY="28.0" />
+      <TextField fx:id="prenom" layoutX="253.0" layoutY="73.0" />
+      <TextField fx:id="adresse" layoutX="253.0" layoutY="118.0" />
+      <TextField fx:id="username" layoutX="253.0" layoutY="168.0" />
+      <TextField fx:id="email" layoutX="253.0" layoutY="213.0" />
+      <PasswordField fx:id="password" layoutX="253.0" layoutY="258.0" />
+      <PasswordField fx:id="confirmpass" layoutX="253.0" layoutY="303.0" />
+      <TextField fx:id="numtel" layoutX="253.0" layoutY="400.0" />
+      <Button fx:id="inscri" layoutX="89.0" layoutY="563.0" mnemonicParsing="false" onAction="#inscri" text="Inscription" />
+      <Button layoutX="303.0" layoutY="563.0" mnemonicParsing="false" text="Annuler" />
+      <JFXComboBox fx:id="role" layoutX="253.0" layoutY="350.0" prefHeight="31.0" prefWidth="187.0" />
+      <ImageView fx:id="image" fitHeight="95.0" fitWidth="102.0" layoutX="296.0" layoutY="453.0" onDragDropped="#imageDropped" onDragOver="#imageDragOver" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/drag-and-drop-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="491.0" text="Image" textFill="WHITE" />
+   </children>
+</AnchorPane>

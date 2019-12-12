@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="1231.0" stylesheets="CssPackage/style_panel.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyMenuDoFXMLController">
+   <top>
+      <HBox prefHeight="70.0" prefWidth="762.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="104.0" prefWidth="1231.0" style="-fx-background-color: white; -fx-background-radius: 100;" HBox.hgrow="ALWAYS">
+               <children>
+                  <FontAwesomeIconView glyphName="HOME" onMouseClicked="#ToHome" size="60" strokeType="INSIDE" style="-fx-cursor: hand;" wrappingWidth="59.71428680419922">
+                     <HBox.margin>
+                        <Insets bottom="25.0" top="20.0" />
+                     </HBox.margin></FontAwesomeIconView>
+                  <Text fx:id="nbr" fill="#2807ff" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets top="38.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <opaqueInsets>
+                  <Insets right="25.0" />
+               </opaqueInsets>
+            </HBox>
+         </children></HBox>
+   </top>
+   <left>
+      <VBox maxWidth="-Infinity" prefHeight="614.0" prefWidth="196.0" style="-fx-background-color: #1a2778; -fx-background-radius: 20; -fx-border-radius: 100;" styleClass="cursor_hand" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Ressources/admin.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="user" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="112.66671752929688">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </Text>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Profile" style="-fx-background-radius: 100;" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#AjoutDo" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Ajouter Donations">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#AfiicheDo" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#00f441" glyphName="HEART" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Les Donations">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#MesDo" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#ff001a" glyphName="HEARTBEAT" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Mes Donations ">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#chat" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#079ded" glyphName="COMMENTS" size="30" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Chat instantané" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="25.0" />
+         </padding>
+      </VBox>
+   </left>
+   <opaqueInsets>
+      <Insets top="223.0" />
+   </opaqueInsets>
+</BorderPane>

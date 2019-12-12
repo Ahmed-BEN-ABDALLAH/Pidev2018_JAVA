@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="526.0" prefWidth="534.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ajoutproduit">
+   <children>
+      <Button id="ajouter" fx:id="ajout" layoutX="427.0" layoutY="476.0" mnemonicParsing="false" onAction="#ajout" style="-fx-background-color: #ea646a;" text="ajouter" textFill="#393535fc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="nom_pr" focusColor="#ee0e52" labelFloat="true" layoutX="66.0" layoutY="42.0" prefHeight="37.0" prefWidth="187.0" promptText="nom" unFocusColor="#ee0e52">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="prix_pr" labelFloat="true" layoutX="313.0" layoutY="42.0" prefHeight="37.0" prefWidth="187.0" promptText="prix" unFocusColor="#4b1de1">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="age_pr" focusColor="#08ab3c" labelFloat="true" layoutX="66.0" layoutY="116.0" prefHeight="37.0" prefWidth="187.0" promptText="age" unFocusColor="#08ab3c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="stock_pr" focusColor="#0db2d7" labelFloat="true" layoutX="313.0" layoutY="116.0" prefHeight="37.0" prefWidth="187.0" promptText="stock" unFocusColor="#0db2d7">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXRadioButton fx:id="homme" layoutX="66.0" layoutY="207.0" onAction="#radioSelected" text="garçon" textFill="#1a09b2">
+         <toggleGroup>
+            <ToggleGroup fx:id="genre" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="femme" layoutX="160.0" layoutY="207.0" onAction="#radioSelected" text="fille" textFill="#dd41ae">
+         <toggleGroup>
+            <ToggleGroup fx:id="genre" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXComboBox fx:id="categorie_pr" focusColor="#b757e7" labelFloat="true" layoutX="312.0" layoutY="197.0" prefHeight="37.0" prefWidth="187.0" promptText="categorie" unFocusColor="#b757e7" />
+      <JFXButton fx:id="fichier" alignment="TOP_CENTER" defaultButton="true" layoutX="75.0" layoutY="270.0" onAction="#fichier_image" prefHeight="37.0" prefWidth="146.0" ripplerFill="WHITE" style="-fx-background-color: #00cc3a;" text="Importer image" textFill="#070707">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="image_p" fitHeight="64.0" fitWidth="126.0" layoutX="333.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextArea fx:id="description_pr" focusColor="#e018a8" labelFloat="true" layoutX="66.0" layoutY="337.0" prefHeight="112.0" prefWidth="445.0" promptText="description" unFocusColor="#e018a8">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="708.0" style="-fx-background-radius: 100; -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UpdateDoController">
+   <children>
+      <JFXTextField fx:id="nom_do" focusColor="#fbfbfb" layoutX="128.0" layoutY="87.0" prefHeight="25.0" prefWidth="229.0" promptText="Nom donation" unFocusColor="#f61010" />
+      <JFXTextArea fx:id="description_do" focusColor="#100101" layoutX="122.0" layoutY="166.0" prefHeight="94.0" prefWidth="241.0" promptText="Description" unFocusColor="#ea49f8" />
+      <JFXTextField fx:id="adresse_do" layoutX="429.0" layoutY="87.0" prefHeight="25.0" prefWidth="221.0" promptText="Adresse" unFocusColor="#0dff25" />
+      <TextField fx:id="tel_do" layoutX="438.0" layoutY="234.0" promptText="Téléphone">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <RadioButton fx:id="garcon_do" layoutX="149.0" layoutY="325.0" mnemonicParsing="false" text="Garçon" textFill="#d71313" />
+      <RadioButton fx:id="fille_do" layoutX="275.0" layoutY="325.0" mnemonicParsing="false" text="Fille" textFill="#a7cc7c" />
+      <JFXButton layoutX="603.0" layoutY="468.0" onAction="#addButton" text="serveur" />
+      <ImageView fx:id="image_p" fitHeight="150.0" fitWidth="200.0" layoutX="137.0" layoutY="360.0" onDragDropped="#imageDropped" onDragOver="#imageDragOver" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Ressources/drag-and-drop-icon.png" />
+         </image></ImageView>
+      <Button fx:id="ajoutDo" cancelButton="true" defaultButton="true" layoutX="494.0" layoutY="450.0" mnemonicParsing="false" onAction="#ajoutDo" prefHeight="25.0" prefWidth="91.0" text="valider" textFill="#4a1ae9" underline="true" />
+      <ComboBox fx:id="categorie" layoutX="437.0" layoutY="346.0" prefWidth="150.0" style="-fx-border-color: #0A49F9;" />
+      <FontAwesomeIconView fill="#ff0e0e" glyphName="GIFT" layoutX="99.0" layoutY="103.0" size="25" />
+      <FontAwesomeIconView fill="#3bff05" glyphName="MAP_MARKER" layoutX="413.0" layoutY="110.0" size="25" text="" />
+      <FontAwesomeIconView fill="#cc26d4" glyphName="COMMENTS" layoutX="97.0" layoutY="183.0" size="25" text="" />
+      <FontAwesomeIconView glyphName="PHONE" layoutX="411.0" layoutY="255.0" size="25" />
+      <FontAwesomeIconView fill="#cc4444" glyphName="MALE" layoutX="129.0" layoutY="341.0" size="25" />
+      <FontAwesomeIconView fill="#4ac953" glyphName="FEMALE" layoutX="251.0" layoutY="341.0" size="25" />
+      <JFXButton fx:id="fichier" layoutX="251.0" layoutY="523.0" onAction="#fichier_image" text="parcourir..." />
+      <FontAwesomeIconView fx:id="webcamf" glyphName="CAMERA" layoutX="165.0" layoutY="548.0" onMouseClicked="#webcamF" size="40">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+   <opaqueInsets>
+      <Insets left="25.0" />
+   </opaqueInsets>
+</AnchorPane>

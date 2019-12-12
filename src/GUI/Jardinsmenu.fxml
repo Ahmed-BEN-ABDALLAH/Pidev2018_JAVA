@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="BorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="932.0" prefWidth="1347.0" stylesheets="CssPackage/style_panel.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuJardinController">
+   <top>
+      <HBox prefHeight="70.0" prefWidth="762.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #0fbcf9;">
+               <children>
+                  <FontAwesomeIconView glyphName="LASTFM" size="20">
+                     <HBox.margin>
+                        <Insets left="25.0" top="30.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="1061.0" style="-fx-border-radius: red;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text fx:id="nbr" fill="#2807ff" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <HBox.margin>
+                        <Insets top="38.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+                  <FontAwesomeIconView glyphName="HOME" onMouseClicked="#ToHome" size="60" strokeType="INSIDE" style="-fx-cursor: hand;" wrappingWidth="59.71428680419922" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="1.0" top="1.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+               <opaqueInsets>
+                  <Insets right="25.0" />
+               </opaqueInsets>
+            </HBox>
+         </children></HBox>
+   </top>
+   <left>
+      <VBox maxWidth="-Infinity" prefHeight="614.0" prefWidth="196.0" style="-fx-background-color: WHITE;" styleClass="cursor_hand" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#AjoutJardin" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#101010" glyphName="PLUS" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Ajouter Jardins">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Toutejardins" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#00f441" glyphName="HEART" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Toute Jardins">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Mesjardins" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#ff001a" glyphName="HEARTBEAT" size="25" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Mes Jardins">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#Mesmessages" styleClass="hover_border" stylesheets="@../CssPackage/style_Panel.css">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView fill="#079ded" glyphName="COMMENTS" size="30" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bold; -fx-fill: #485460;" text="Messages" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="25.0" />
+         </padding>
+      </VBox>
+   </left>
+   <opaqueInsets>
+      <Insets top="223.0" />
+   </opaqueInsets>
+</BorderPane>
